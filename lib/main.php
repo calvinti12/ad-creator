@@ -6,7 +6,7 @@ require_once 'fb-ads.php';
 
 function main($url, $user) {
   // Embed
-  $embedUrl = 'https://api.embed.rocks/api/?key=45bf987e-e346-499a-b7c1-794afa20add2&url=' . urlencode($url);
+  $embedUrl = 'https://api.embed.rocks/api/?key=85f6a5c5-06f8-45d9-b3cc-c41f931c79d2&url=' . urlencode($url);
 
   $embedDataStr = file_get_contents($embedUrl);
   if(!$embedDataStr) {
