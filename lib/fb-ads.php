@@ -56,7 +56,7 @@ function saveTmpImage($url) {
 use FacebookAds\Api;
 use FacebookAds\Logger\CurlLogger;
 function initFBSDK($app_id, $app_secret, $access_token) {
-  $api = Api::init($app_id, $app_secret, $access_token);
+  Api::init($app_id, $app_secret, $access_token);
   Api::instance()->setLogger(new CurlLogger(fopen("./log.txt", "w")));
 
 }
